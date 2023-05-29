@@ -1,10 +1,13 @@
 {
-  "name": "module02",
+  "name": "module01",
   "version": "1.0.0",
   "description": "This is my first package.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "type": "module",
+    "start": "nodemon app.js",
+    "compile": "babel src --presets @babel/react src --out-dir public",
+    "watch": "babel src --presets @babel/react src --out-dir public --watch --verbose"
   },
   "author": "Minge Chao",
   "license": "ISC",
@@ -13,6 +16,10 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-react": "^7.22.3",
     "nodemon": "^2.0.22"
-  }
+  },
+  "keywords": []
 }
