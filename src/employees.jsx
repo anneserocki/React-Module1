@@ -3,6 +3,8 @@ let anne = "Anne Chao"
 let tom = "Tom Serocki"
 let jerry = "Jerry Holler"
 let sarah = "Sarah Miller"
+let robert = "Robert Hayashi"
+let lll = "222"
 
 const element = (
     <ul style={{'color': 'blue', 'fontSize': '24px'}} >
@@ -11,6 +13,8 @@ const element = (
         <li>{tom}</li>
         <li>{jerry}</li>
         <li>{sarah}</li>
+        <li>{robert}</li>
+        <li>{lll}</li>
     </ul>    
 )
-ReactDom.render(element, document.getElementById('content'))
+ReactDOM.render(element, document.getElementById('content'))

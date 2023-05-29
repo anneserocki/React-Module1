@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is my first package.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "type": "module",
     "start": "nodemon app.js",
     "compile": "babel src --presets @babel/react src --out-dir public",
     "watch": "babel src --presets @babel/react src --out-dir public --watch --verbose"
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "react-dom": "^18.2.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
