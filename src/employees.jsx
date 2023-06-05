@@ -1,3 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import EmployeeList from './EmployeeList.jsx';
+
+
 let zak = "zak Ruvalcaba"
 let anne = "Anne Chao"
 let tom = "Tom Serocki"
@@ -17,4 +22,9 @@ const element = (
         <li>{lll}</li>
     </ul>    
 )
-ReactDOM.render(element, document.getElementById('content'))
+ReactDOM.render(
+    <React.StrictMode>
+        <EmployeeList />
+    </React.StrictMode>, 
+    document.getElementById('content')
+)
