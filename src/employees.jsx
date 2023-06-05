@@ -18,8 +18,7 @@ const element = (
         <li>{tom}</li>
         <li>{jerry}</li>
         <li>{sarah}</li>
-        <li>{robert}</li>
-        <li>{lll}</li>
+        <li>{robert}</li>        
     </ul>    
 )
 ReactDOM.render(
